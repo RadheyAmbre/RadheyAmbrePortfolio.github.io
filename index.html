@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>PORTFOLIO</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+</head>
+
+<body>
+    <button onclick="topFunction()" id="myBtn" class="myBtn" title="Go to top">
+        <i class="fa-solid fa-arrow-up fa-bounce fa-2xl" style="color: #0dcaf0;"></i>
+    </button>
+
+    <!-- Navbar -->
+    <nav class="navbar fixed-top navbar-expand-lg navbar-expand-md bg-body-tertiary mb-5">
+        <div class="container-fluid">
+            <div>
+                <a class="navbar-brand text-info fs-2 fw-bold"
+                    style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif" href="#">
+                    RADHEY AMBRE
+                </a>
+            </div>
+
+            <div>
+                <button class="btn d-md-none" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasResponsive" aria-controls="offcanvasResponsive">
+
+                    <i class="fa-solid fa-bars fa-2xl" style="color: #0dcaf0;"></i>
+
+                </button>
+
+                <div class="offcanvas-md offcanvas-end" id="offcanvasResponsive"
+                    aria-labelledby="offcanvasResponsiveLabel" data-bs-scroll="true">
+
+                    <div class="offcanvas-header">
+                        <button type="button" class="btn-close d-md-none" data-bs-dismiss="offcanvas"
+                            data-bs-target="#offcanvasResponsive" aria-label="Close"></button>
+                    </div>
+
+                    <div class="offcanvas-body">
+                        <div class="navbar-nav">
+                            <a class="nav-link" href="#skill"><button class="nav-item me-5">SKILLS</button></a>
+                            <a class="nav-link" href="#project"><button class="nav-item me-5">PROJECT</button></a>
+                            <a class="nav-link" href="#aboutMe"><button class="nav-item me-5">ABOUT ME</button></a>
+                            <a class="nav-link" href="#experience"><button class="nav-item me-5">EXPERIENCE</button></a>
+                            <a class="nav-link" href="#contact"><button class="nav-item">CONTACT ME</button></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <div class="container d-flex pt-5 my-5">
+        <div class="row my-5">
+
+            <div class="hidden picAnimation col d-flex justify-content-center">
+                <div class="frame">
+                    <img src="profilePic.webp" class="pic">
+                </div>
+            </div>
+
+            <div class="hidden selfAnimation col">
+                <h1>Radhey Ambre</h1>
+                <h2>Looking for opportunites as an <b>Web Developer</b></h2>
+                <div class="my-3">Seeking the position to utilize my skills and abilities in the Computer and
+                    Information Technology industry that offers professional growth while being resourceful,
+                    innovative
+                    and flexible.</div>
+                <div class="d-flex my-3">
+                    <div class="p-2"><i class="fa-solid fa-location-crosshairs fa-2xl" style="color: #0dcaf0;"></i>
+                    </div>
+                    <div class="p-2"><b>Powai, Mumbai, Maharashtra</b></div>
+                </div>
+                <a href="Radhey_Resume.pdf" download>
+                    <button class="downCv rounded-pill px-3 py-2 mt-5">
+                        <b>Download CV</b>
+                    </button>
+                </a>
+            </div>
+
+        </div>
+    </div>
+
+    <br><br>
+
+    <!-- My Skills -->
+    <section class="content" id="skill">
+        <div class="container p-1">
+            <div class="container rounded-5 p-5" style="background-color: #CCF6FF;">
+                <h1 class="cardT pb-5">
+                    <span class="vl"></span> &nbsp; TECHNICAL SKILLS
+                </h1>
+
+                <div class="mh-professional-progress">
+                    <div class="d-flex justify-content-center pb-5">
+                        <div role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"
+                            style="--value: 75">
+                            <div class="pr-skill-name">
+                                HTML
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-center pb-5">
+                        <div role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"
+                            style="--value: 70">
+                            <div class="pr-skill-name">
+                                CSS
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-center pb-5">
+                        <div role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"
+                            style="--value: 50">
+                            <div class="pr-skill-name">
+                                JavaScript
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+
+    <br><br>
+
+    <!-- Project -->
+    <section class="content" id="project">
+        <div class="container p-1 py-5">
+            <h1 class="cardT">
+                <span class="vl"></span> &nbsp; PROJECT
+            </h1>
+            <a href="OnlineTest.html">
+                <div class="hov">
+                    <button class="but">Live Demo</button>
+                    <img class="pro" src="project.png" alt="project">
+                </div>
+            </a>
+            <!-- <p class="mt-5 px-5 fs-5 fw-semibold">
+            I have experience in developing an online test interface using HTML, CSS, and
+            JavaScript. In one of my projects, I designed a web page that simulates an online test environment.
+            This project demonstrates my proficiency in front-end web development and my ability to create
+            interactive and user-friendly interfaces. It showcases my skills in HTML, CSS, and JavaScript, and
+            the use of external libraries for styling and functionality.
+        </p> -->
+
+        </div>
+    </section>
+
+    <br><br>
+
+    <!-- About me -->
+    <section class="content" id="aboutMe">
+        <div class="container p-1">
+            <div class="container rounded-5 p-3" style="background-color: #CCF6FF;">
+                <div class="row">
+                    <h1 class="card-title cardT p-5">
+                        <span class="vl"></span> &nbsp; ABOUT ME
+                    </h1>
+
+                    <h2 class="card-text ps-5 p-3">My strengths</h2>
+
+                    <div class="container card-text p-5">
+                        <div class="row">
+                            <div class="col-lg-3 mb-3 hidden about">
+                                <div class="card miniCard">
+                                    <div class="card-body">
+                                        <p class="circle">
+                                            <img src="ear.png" style="height: 70px; width: 70px; margin-top: 10px;">
+                                        </p>
+                                        <h3 class="card-title pb-5">Good Listener</h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 mb-3 hidden about">
+                                <div class="card miniCard">
+                                    <div class="card-body">
+                                        <p class="circle">
+                                            <img src="learner.png" style="height: 70px; width: 70px; margin-top: 10px;">
+                                        </p>
+                                        <h3 class="card-title pb-5">Quick Learner</h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 mb-3 hidden about">
+                                <div class="card miniCard">
+                                    <div class="card-body">
+                                        <p class="circle">
+                                            <img src="teamwork.png"
+                                                style="height: 70px; width: 70px; margin-top: 10px;">
+                                        </p>
+                                        <h3 class="card-title pb-5">Teamwork Skills</h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 mb-3 hidden about">
+                                <div class="card miniCard">
+                                    <div class="card-body">
+                                        <p class="circle">
+                                            <img src="sincere.png" style="height: 70px; width: 70px; margin-top: 10px;">
+                                        </p>
+                                        <h3 class="card-title pb-5">Sincere in Work</h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <br><br>
+
+    <!-- Education -->
+    <section class="content" id="experience">
+        <div class="container">
+            <div class="card-title cardT">
+                <h1><span class="vl"></span> &nbsp; TIMELINE</h1>
+            </div>
+
+            <div>
+                <h2 class="mt-5">Education
+                </h2>
+            </div>
+
+            <div class="d-flex hidden ed">
+                <div class="card mt-5 shadow-lg car">
+                    <img src="HFHS.jpg" class="card-img-top" style="height: 128px;" alt="HFHS">
+                    <div class="card-body">
+                        <h5 class="card-title">Holy Family High School</h5>
+                        <p class="card-text">Mar 2015</p>
+                        <p class="card-text pt-0">X<sup>th</sup></p>
+                    </div>
+                </div>
+                <i class="fa-solid fa-circle-notch fa-rotate-90 fa-2xl circ d-none d-sm-block"
+                    style="color: #0dcaf0;"></i>
+                <i class="fa-solid fa-circle-notch fa-rotate-90 fa-lg circ d-block d-sm-none"
+                    style="color: #0dcaf0;"></i>
+                <hr class="hl">
+                <span class="vl2"></span>
+            </div>
+
+            <div class="d-flex hidden ed">
+                <div class="card mt-5 shadow-lg car">
+                    <img src="tolani.jpg" class="card-img-top" style="height: 128px;" alt="HFHS">
+                    <div class="card-body">
+                        <h5 class="card-title">Tolani College of Commerce</h5>
+                        <p class="card-text">Feb 2017</p>
+                        <p class="card-text pt-0">XII<sup>th</sup></p>
+                    </div>
+                </div>
+                <i class="fa-solid fa-circle-notch fa-rotate-90 fa-2xl circ d-none d-sm-block"
+                    style="color: #0dcaf0;"></i>
+                <i class="fa-solid fa-circle-notch fa-rotate-90 fa-lg circ d-block d-sm-none"
+                    style="color: #0dcaf0;"></i>
+                <hr class="hl">
+                <span class="vl2"></span>
+            </div>
+
+            <div class="d-flex hidden ed">
+                <div class="card mt-5 shadow-lg car">
+                    <img src="tolani.jpg" class="card-img-top" style="height: 128px;" alt="HFHS">
+                    <div class="card-body">
+                        <h5 class="card-title">Tolani College of Commerce</h5>
+                        <p class="card-text">Oct 2020</p>
+                        <p class="card-text pt-0">B.Com</p>
+                    </div>
+                </div>
+                <i class="fa-solid fa-circle-notch fa-rotate-90 fa-2xl circ d-none d-sm-block"
+                    style="color: #0dcaf0;"></i>
+                <i class="fa-solid fa-circle-notch fa-rotate-90 fa-lg circ d-block d-sm-none"
+                    style="color: #0dcaf0;"></i>
+                <hr class="hl">
+                <span class="vl2" style="height: 9.6rem;"></span>
+            </div>
+
+        </div>
+    </section>
+
+    <br><br>
+
+    <!-- Hobby -->
+    <div class="container p-1">
+        <div class="container rounded-5 p-3" style="background-color: #CCF6FF;">
+            <h1 class="card-title cardT p-5">
+                <span class="vl"></span> &nbsp; HOBBIES
+            </h1>
+
+            <div class="container p-5">
+                <div class="row">
+
+                    <div class="col-lg-4 mb-4 text-center">
+                        <p class="circle bg-white text-center hidden hob">
+                            <img src="gaming.png" style="height: 70px; width: 70px; margin-top: 10px;">
+                        </p>
+                        <h3 class="card-title pb-5">Gaming</h3>
+                    </div>
+                    <div class="col-lg-4 mb-4 text-center">
+                        <p class="circle bg-white text-center hidden hob">
+                            <img src="book.png" style="height: 70px; width: 70px; margin-top: 10px;">
+                        </p>
+                        <h3 class="card-title pb-5">Reading</h3>
+                    </div>
+                    <div class="col-lg-4 mb-4 text-center">
+                        <p class="circle bg-white text-center hidden hob">
+                            <img src="surfing.png" style="height: 70px; width: 70px; margin-top: 10px;">
+                        </p>
+                        <h3 class="card-title pb-5">Net Surfing</h3>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <br><br>
+
+    <!-- Contact -->
+    <section class="content" id="contact">
+        <div class="container py-5" id="contact">
+            <h1 class="cardT py-5">
+                <span class="vl"></span> &nbsp; CONTACT
+            </h1>
+
+            <div class="row">
+                <div class="col text-start d-flex flex-column">
+
+                    <div class="d-flex my-3">
+                        <i class="fa-solid fa-envelope fa-2xl pt-3" style="color: #0dcaf0;"></i>
+                        <p class="ps-3 fw-bold">radheyambre0@gmail.com</p>
+                    </div>
+                    <div class="d-flex my-3">
+                        <i class="fa-solid fa-location-dot fa-2xl pt-3" style="color: #0dcaf0;"></i>
+                        <p class="ps-3 fw-bold">Powai, Mumbai, Maharashtra</p>
+                    </div>
+                    <a class="my-3" href="Radhey_Resume.pdf" download>
+                        <button class="downCv rounded-pill px-3 py-2 mt-5">
+                            <b>Download CV</b>
+                        </button>
+                    </a>
+
+                </div>
+
+                <div class="hidden cont col text-end p-5 rounded-5 shadow-lg">
+                    <div class="p-3">
+                        <form>
+                            <h4 class="text-start text-secondary">GET IN TOUCH</h4><br>
+                            <div class="form-floating mb-3">
+                                <input type="name" class="form-control" id="floatingInput" placeholder="name">
+                                <label for="floatingInput">Name</label>
+                            </div>
+                            <div class="form-floating mb-3">
+                                <input type="email" class="form-control" id="floatingInput"
+                                    placeholder="name@example.com">
+                                <label for="floatingInput">Email address</label>
+                            </div>
+                            <div class="form-floating">
+                                <textarea class="form-control" placeholder="Leave a message" id="floatingTextarea2"
+                                    style="height: 100px"></textarea>
+                                <label for="floatingTextarea2">Leave a message</label>
+                            </div>
+                            <div class="d-flex justify-content-center">
+                                <button class="downCv rounded-pill px-4 py-2 mt-5" type="submit">
+                                    <b>Submit</b>
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <br><br>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha384-tsQFqpEReu7ZLhBV2VZlAu7zcOV+rXbYlF2cqB8txI/8aZajjp4Bqd+V6D5IgvKT"
+        crossorigin="anonymous"></script>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
