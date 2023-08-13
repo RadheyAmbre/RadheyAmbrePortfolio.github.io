@@ -1,0 +1,547 @@
+.hidden {
+    opacity: 0;
+}
+
+.vl {
+    border-left: 5px solid #0DCAF0;
+}
+
+.cardT {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    letter-spacing: 2px;
+}
+
+/* Top Button */
+.myBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color: white;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 4px;
+}
+
+.myBtn:hover {
+    background-color: #CCF6FF;
+}
+
+
+/* Nav-Bar */
+.nav-item {
+    border: none;
+    background-color: white;
+    font-weight: bold;
+}
+
+.nav-item:hover {
+    cursor: pointer;
+    color: #0DCAF0;
+}
+
+
+/* Header */
+@keyframes picAnime {
+    0% {
+        transform: scale(0);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+.show.picAnimation {
+    opacity: 1;
+    transition: 2s;
+    animation: picAnime 2500ms;
+}
+
+@keyframes selfAnime {
+    0% {
+        transform: translateX(-100%);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+.show.selfAnimation {
+    opacity: 1;
+    transition: 2s;
+    animation: selfAnime 2000ms;
+}
+
+@media only screen and (max-width: 400px) {
+    .pic {
+        height: 20rem;
+        width: 15rem;
+        border-radius: 25px;
+        position: relative;
+        left: 10px;
+        bottom: 30px;
+    }
+
+    .frame {
+        height: 20rem;
+        width: 15rem;
+        border: solid 10px #0DCAF0;
+        border-radius: 25px;
+    }
+}
+
+@media only screen and (min-width: 400px) {
+    .pic {
+        height: 25rem;
+        width: 20rem;
+        border-radius: 25px;
+        position: relative;
+        left: 10px;
+        bottom: 30px;
+    }
+
+    .frame {
+        height: 25rem;
+        width: 20rem;
+        border: solid 10px #0DCAF0;
+        border-radius: 25px;
+    }
+}
+
+.downCv {
+    border: 3px solid #0DCAF0;
+    background-color: white;
+    color: #0DCAF0;
+}
+
+.downCv:hover {
+    cursor: pointer;
+    background-color: #CCF6FF;
+    border-color: #CCF6FF;
+    transition: all .3s;
+    transition-duration: 500ms;
+}
+
+
+/* My Skills */
+@media only screen and (min-width: 770px) {
+    @keyframes growProgressBar {
+
+        0%,
+        33% {
+            --pgPercentage: 0;
+        }
+
+        100% {
+            --pgPercentage: var(--value);
+        }
+    }
+
+    @property --pgPercentage {
+        syntax: "<number>";
+        inherits: false;
+        initial-value: 0;
+    }
+
+    div[role="progressbar"] {
+        --size: 12rem;
+        --primary-color: #CCF6FF;
+        --fg: #0DCAF0;
+        --bo: rgba(0, 0, 0, 0.2);
+        --pgPercentage: var(--value);
+        width: var(--size);
+        height: var(--size);
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background:
+            radial-gradient(closest-side, var(--primary-color) 80%, transparent 0 99.9%, var(--primary-color) 0),
+            conic-gradient(var(--fg) calc(var(--pgPercentage) * 1%), var(--bo) 0);
+        font-size: calc(var(--size) / 8);
+    }
+
+    div[role="progressbar"]::before {
+        counter-reset: percentage var(--value);
+        content: counter(percentage) '%';
+    }
+
+    .is-animating {
+        animation: growProgressBar 1.5s 1 forwards;
+        animation-timing-function: ease-in-out;
+        animation-delay: 0s;
+    }
+
+    .mh-professional-progress {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .pr-skill-name {
+        font-size: 15px;
+    }
+}
+
+@media only screen and (min-width: 460px) and (max-width: 770px) {
+    @keyframes growProgressBar {
+
+        0%,
+        33% {
+            --pgPercentage: 0;
+        }
+
+        100% {
+            --pgPercentage: var(--value);
+        }
+    }
+
+    @property --pgPercentage {
+        syntax: "<number>";
+        inherits: false;
+        initial-value: 0;
+    }
+
+    div[role="progressbar"] {
+        --size: 8rem;
+        --primary-color: #CCF6FF;
+        --fg: #0DCAF0;
+        --bo: rgba(0, 0, 0, 0.2);
+        --pgPercentage: var(--value);
+        width: var(--size);
+        height: var(--size);
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background:
+            radial-gradient(closest-side, var(--primary-color) 80%, transparent 0 99.9%, var(--primary-color) 0),
+            conic-gradient(var(--fg) calc(var(--pgPercentage) * 1%), var(--bo) 0);
+        font-size: calc(var(--size) / 8);
+    }
+
+    div[role="progressbar"]::before {
+        counter-reset: percentage var(--value);
+        content: counter(percentage) '%';
+    }
+
+    .is-animating {
+        animation: growProgressBar 1.5s 1 forwards;
+        animation-timing-function: ease-in-out;
+        animation-delay: 0s;
+    }
+
+    .mh-professional-progress {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .pr-skill-name {
+        font-size: 15px;
+    }
+}
+
+@media only screen and (max-width: 460px) {
+    @keyframes growProgressBar {
+
+        0%,
+        33% {
+            --pgPercentage: 0;
+        }
+
+        100% {
+            --pgPercentage: var(--value);
+        }
+    }
+
+    @property --pgPercentage {
+        syntax: "<number>";
+        inherits: false;
+        initial-value: 0;
+    }
+
+    div[role="progressbar"] {
+        --size: 10rem;
+        --primary-color: #CCF6FF;
+        --fg: #0DCAF0;
+        --bo: rgba(0, 0, 0, 0.2);
+        --pgPercentage: var(--value);
+        width: var(--size);
+        height: var(--size);
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background:
+            radial-gradient(closest-side, var(--primary-color) 80%, transparent 0 99.9%, var(--primary-color) 0),
+            conic-gradient(var(--fg) calc(var(--pgPercentage) * 1%), var(--bo) 0);
+        font-size: calc(var(--size) / 8);
+    }
+
+    div[role="progressbar"]::before {
+        counter-reset: percentage var(--value);
+        content: counter(percentage) '%';
+    }
+
+    .is-animating {
+        animation: growProgressBar 1.5s 1 forwards;
+        animation-timing-function: ease-in-out;
+        animation-delay: 0s;
+        display: flex;
+    }
+
+    .pr-skill-name {
+        font-size: 15px;
+    }
+}
+
+/* Project */
+.hov {
+    position: relative;
+}
+
+.hov img {
+    width: 100%;
+    filter: drop-shadow(10px 10px 10px grey);
+}
+
+.hov img:hover {
+    cursor: pointer;
+    transition: 500ms;
+    transform: scale(0.9);
+    opacity: 0.4;
+}
+
+.hov .but {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: #0DCAF0;
+    color: white;
+    font-size: 16px;
+    padding: 12px 24px;
+    border: none;
+    cursor: pointer;
+    border-radius: 50px;
+    text-align: center;
+}
+
+/* About Me */
+@keyframes aboutMe {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+.show.about {
+    opacity: 1;
+    transition: 2s;
+    animation: aboutMe 2000ms ease-out 100ms;
+}
+
+.about:nth-child(2) {
+    transition-delay: 300ms;
+}
+
+.about:nth-child(3) {
+    transition-delay: 500ms;
+}
+
+.about:nth-child(4) {
+    transition-delay: 600ms;
+}
+
+.miniCard {
+    padding: 1rem;
+    text-align: center;
+    background-color: white;
+}
+
+.miniCard:hover {
+    transition: 0.5s;
+    transform: scale(1.1);
+    box-shadow: 0 1em 1em rgba(180, 180, 180, 0.5);
+}
+
+.circle {
+    height: 6rem;
+    width: 6rem;
+    background-color: #CCF6FF;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+
+/* Education */
+@media only screen and (min-width: 770px) {
+    @keyframes education {
+        0% {
+            transform: translateY(-50%);
+        }
+
+        100% {
+            transform: translateY(0);
+        }
+    }
+
+    .car {
+        width: 18rem;
+    }
+
+    .show.ed {
+        opacity: 1;
+        transition: 2s;
+        animation: education 2000ms ease-in-out;
+    }
+
+    .vl2 {
+        border-left: 3px solid #0dcaf0;
+        margin-left: 5.5rem;
+    }
+
+    .hl {
+        border: 2px solid #0dcaf0;
+        width: 0;
+        height: 180px;
+        margin-left: 238px;
+        margin-top: 63.5px;
+        transform: rotate(90deg);
+    }
+}
+
+@media only screen and (min-width: 460px) and (max-width: 770px) {
+    @keyframes education {
+        0% {
+            transform: translateY(-50%);
+        }
+
+        100% {
+            transform: translateY(0);
+        }
+    }
+
+    .car {
+        width: 15rem;
+    }
+
+    .show.ed {
+        opacity: 1;
+        transition: 2s;
+        animation: education 2000ms ease-in-out;
+    }
+
+    .vl2 {
+        border-left: 3px solid #0dcaf0;
+        margin-left: 35px;
+    }
+
+    .hl {
+        border: 2px solid #0dcaf0;
+        width: 0;
+        height: 80px;
+        margin-left: 120px;
+        margin-top: 112px;
+        transform: rotate(90deg);
+    }
+
+    .circ {
+        position: relative;
+        right: 80px;
+        bottom: 13px;
+    }
+}
+
+@media only screen and (max-width: 460px) {
+    @keyframes education {
+        0% {
+            transform: translateY(-50%);
+        }
+
+        100% {
+            transform: translateY(0);
+        }
+    }
+
+    .car {
+        width: 15rem;
+    }
+
+    .show.ed {
+        opacity: 1;
+        transition: 2s;
+        animation: education 2000ms ease-in-out;
+    }
+
+    .vl2 {
+        border-left: 3px solid #0dcaf0;
+        margin-left: 23px;
+    }
+
+    .hl {
+        border: 2px solid #0dcaf0;
+        width: 0;
+        height: 50px;
+        margin-left: 50px;
+        margin-top: 128px;
+        transform: rotate(90deg);
+    }
+
+    .circ {
+        position: relative;
+        right: 135px;
+        bottom: 12px;
+    }
+}
+
+/* Hobby */
+@keyframes hobby {
+    0% {
+        transform: translateX(-100%) rotate(0) scale(0);
+    }
+
+    50% {
+        transform: translateX(100%) rotate(180deg) scale(0.5);
+    }
+
+    100% {
+        transform: translateX(0) rotate(360deg) scale(1);
+    }
+}
+
+.show.hob {
+    opacity: 1;
+    transition: 2s;
+    animation: hobby 1.5s ease 100ms;
+}
+
+
+/* Contact Me */
+@keyframes contactAnime {
+    0% {
+        transform: translateX(100%);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+.show.cont {
+    opacity: 1;
+    transition: 1s;
+    animation: contactAnime 1000ms;
+}
