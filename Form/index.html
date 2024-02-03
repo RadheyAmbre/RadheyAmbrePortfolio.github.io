@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="sm_logo.webp">
+    <title>Scholarship Request Form</title>
+</head>
+
+<body>
+
+    <div class="progress">
+        <div class="progress-bar" id="myBar"></div>
+    </div>
+
+    <!-- Header -->
+    <header>
+        <!-- Top Header -->
+        <div class="header-top primary-bg">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-xl-6 col-lg-6 col-sm-9 col-12">
+                        <div class="header-left d-flex">
+                            <i class="fas fa-phone me-3"></i>
+                            7208581498
+                        </div>
+                    </div>
+
+                    <div class="col-xl-6 col-lg-6 col-sm-3 col-12 text-center text-sm-end">
+                        <div>
+                            <a href="#"><i class="fa-brands fa-facebook-f mx-3" style="color: #ffffff;"></i></a>
+                            <span class="vl"></span>
+                            <a href="#"><i class="fa-brands fa-google-plus-g mx-3" style="color: #ffffff;"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Top Header -->
+
+        <!-- Bottom Header -->
+        <div class="header-bottom" id="sticky">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-xl-3 col-lg-3 col-md-4 col-sm-5 col-7">
+                        <!-- Logo -->
+                        <div class="logo pt-3">
+                            <a href="#"><img src="logo.webp"></a>
+                            <h5>Microsoft Offical Partner</h5>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!-- Bottom Header -->
+    </header>
+    <!-- end of header -->
+
+    <!-- Form -->
+    <div class="container reqForm my-3 p-5">
+
+        <div class="row-fluid text-sm-center py-3 p-sm-5 logo-img">
+            <img src="10th_ann_celeb_logo.jpg" alt="logo" class="img-fluid imgAnime" width="500rem">
+            <h1 class="mt-5 text-center animationUp" id="top">Scholarship Request Form</h1>
+        </div>
+
+        <div>
+            <form action="" id="myForm">
+                <div class="container">
+                    <div class="row contact">
+
+                        <div class="row">
+                            <!-- Name -->
+                            <div class="col-xl-6 col-md-6 col-12 py-3 animationRight hide">
+                                <label for="name" class="form-label"></label>
+                                <input type="text" class="form-control" id="name" placeholder="Name"
+                                    onkeydown="return /[a-z A-Z]/i.test(event.key)" required>
+                            </div>
+
+                            <!-- Number -->
+                            <div class="col-xl-6 col-md-6 col-12 py-3 animationLeft hide">
+                                <label for="phn_number" class="form-label"></label>
+                                <input type="tel" class="form-control" id="phn_number" placeholder="WhatsApp Number"
+                                    onkeypress="return event.charCode>=48 && event.charCode<=57" minlength="10"
+                                    maxlength="10" required>
+                            </div>
+
+                            <!-- Email -->
+                            <div class="col-xl-6 col-md-6 col-12 py-3 animationRight hide">
+                                <label for="email" class="form-label"></label>
+                                <input type="email" class="form-control" id="email" placeholder="Email address"
+                                    required>
+                            </div>
+                        </div>
+
+                        <!-- Checkbox -->
+                        <div id="checkbox" class="p-3 d-none d-sm-block">
+                            <h3 class="mt-5 animationRight">Training Courses</h3>
+                            <div class="row">
+
+                                <div class="col-xl-4 col-md-4 col-sm-6 p-3 contMark animationScale">
+                                    <label for="Web-Dev" class="ps-5">Web Development
+                                        <input type="radio" id="Web-Dev" name="Training_Courses">
+                                        <span class="checkmark"></span>
+                                    </label>
+                                </div>
+
+                                <div class="col-xl-4 col-md-4 col-sm-6 p-3 contMark animationScale">
+                                    <label for="Python" class="ps-5">Python
+                                        <input type="radio" id="Python" name="Training_Courses">
+                                        <span class="checkmark"></span>
+                                    </label>
+                                </div>
+
+                                <div class="col-xl-4 col-md-4 col-sm-6 p-3 contMark animationScale">
+                                    <label for="Adv-Excel" class="ps-5">Advance Excel
+                                        <input type="radio" id="Adv-Excel" name="Training_Courses">
+                                        <span class="checkmark"></span>
+                                    </label>
+                                </div>
+
+                                <div class="col-xl-4 col-md-4 col-sm-6 p-3 contMark animationScale">
+                                    <label for="Cpp" class="ps-5">C++
+                                        <input type="radio" id="Cpp" name="Training_Courses">
+                                        <span class="checkmark"></span>
+                                    </label>
+                                </div>
+
+                                <div class="col-xl-2 col-md-3 col-sm-4 mt-sm-4 mt-md-0 p-3 contMark animationScale">
+                                    <label for="otherCheckbox" class="ps-5">Other
+                                        <input type="radio" id="otherCheckbox" name="Training_Courses">
+                                        <span class="checkmark"></span>
+                                    </label>
+                                </div>
+
+                                <input type="text" class="col-xl-6 col-md-5 col-sm-8 form-select message-box"
+                                    id="radioMessageBox" style="display: none;" placeholder="Other">
+                                </input>
+
+                            </div>
+                        </div>
+
+                        <!-- Dropdown -->
+                        <div id="dropDown" class="btn-group mb-3 d-block d-sm-none animationUp">
+                            <label for="inputGroupSelect04"></label>
+                            <select class="form-select" id="inputGroupSelect04" name="Training_Courses">
+                                <option selected disabled value="">Training Courses...</option>
+                                <option value="1">Web Development</option>
+                                <option value="2">Python</option>
+                                <option value="3">Advance Excel</option>
+                                <option value="4">C++</option>
+                                <option value="5">Other</option>
+                                <input type="text" class="form-select message-box mt-3 mb-3 d-block d-sm-none" id="dropMessageBox"
+                                    placeholder="Other" disabled>
+                                </input>
+                            </select>
+                        </div>
+
+                        <!-- Address -->
+                        <div class="row ms-1">
+                            <textarea class="my-3 animationRight" id="address" rows="3" placeholder="Address"
+                                required></textarea>
+                        </div>
+
+                        <!-- Submit Button -->
+                        <div class="col-12 text-center animationUp">
+                            <button type="submit" class="submit-button my-3">Submit</button>
+                        </div>
+
+                    </div>
+                </div>
+            </form>
+        </div>
+
+    </div>
+    <!-- end of form -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

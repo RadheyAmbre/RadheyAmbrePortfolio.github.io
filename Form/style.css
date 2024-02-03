@@ -1,0 +1,310 @@
+* {
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* Progress bar */
+.progress {
+    height: 5px;
+    width: 100%;
+    background-color: #002147;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.progress-bar {
+    height: 5px;
+    background-color: #F54B8A;
+    width: 0%;
+}
+
+
+/* Header Top */
+.header-top {
+    padding-top: 7px;
+    padding-bottom: 10px;
+}
+
+.primary-bg {
+    background: #002147;
+}
+
+.header-left {
+    display: inline-block;
+    margin: 0;
+    font-size: 14px;
+    color: #fff;
+    line-height: 1;
+}
+
+.vl {
+    border-left: 1px solid #fff;
+    height: 2px;
+}
+
+
+/* Header Bottom */
+.header-bottom img {
+    width: 100%;
+}
+
+.sticky {
+    left: 0;
+    right: 0;
+    margin: auto;
+    position: fixed;
+    top: 5px;
+    width: 100%;
+    z-index: 1;
+    background: #fff;
+}
+
+/* end of header */
+
+
+/* Form */
+.reqForm {
+    background-color: #002147;
+    color: #fff;
+}
+
+
+.contact input {
+    background: transparent;
+    border-color: transparent;
+    border-bottom: 2px solid #f54a8d;
+    border-radius: 0;
+    transition: all 0.8s;
+    color: #fff;
+}
+
+.contact input:focus {
+    background: transparent;
+    border-color: transparent;
+    box-shadow: none;
+    color: #fff;
+    border-bottom: 2px solid #fff;
+}
+
+.contact input:disabled {
+    background: rgba(128, 128, 128, 0.3);
+}
+
+.contact input::placeholder {
+    color: #fff;
+}
+
+
+.contact textarea {
+    background: transparent;
+    border-color: transparent;
+    border-bottom: 2px solid #f54a8d;
+    border-radius: 0;
+    transition: all 0.8s;
+    color: #fff;
+}
+
+.contact textarea:focus {
+    background: transparent;
+    border-color: transparent;
+    box-shadow: none;
+    color: #fff;
+    border-bottom: 2px solid #fff;
+}
+
+.contact textarea::placeholder {
+    color: #fff;
+}
+
+
+.contact .form-select {
+    background-color: #002147;
+    background-image: url('dropdown.png');
+    color: #fff;
+    border-color: transparent;
+    border: 2px solid #f54a8d;
+    border-radius: 5px;
+    transition: all 0.8s;
+}
+
+.contact .form-select option {
+    background: #002147;
+    border-color: transparent;
+    color: #fff;
+}
+
+.submit-button {
+    padding: 20px 90px;
+    text-transform: uppercase;
+    color: #fff;
+    display: inline-block;
+    line-height: 1;
+    font-size: 14px;
+    font-weight: 700;
+    background-image: -webkit-linear-gradient(left, #133282, #f54b8a);
+    letter-spacing: 0px;
+    border-radius: 30px 5px 5px;
+    transition: 0.3s;
+    border: 0;
+}
+
+.submit-button:hover {
+    border-radius: 5px;
+    transform: translateY(-3px);
+}
+
+@media (max-width: 320px) {
+    .submit-button {
+        padding: 15px 45px;
+        text-transform: uppercase;
+        color: #fff;
+        display: inline-block;
+        line-height: 1;
+        font-size: 14px;
+        font-weight: 700;
+        background-image: -webkit-linear-gradient(left, #133282, #f54b8a);
+        letter-spacing: 0px;
+        border-radius: 30px 5px 5px;
+        transition: 0.3s;
+        border: 0;
+    }
+
+    .submit-button:hover {
+        border-radius: 5px;
+        transform: translateY(-3px);
+    }
+}
+
+/* Custom Checkbox */
+.contMark {
+    position: relative;
+}
+
+.contMark input:first-child {
+    opacity: 0;
+    cursor: pointer;
+}
+
+/* Create a custom radio button */
+.checkmark {
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    height: 20px;
+    width: 20px;
+    background-color: #eee;
+    border-radius: 50%;
+}
+
+/* On mouse-over, add a pink background color */
+.contMark:hover input~.checkmark {
+    background-color: #f54a8d;
+}
+
+/* When the radio button is checked, add a white background */
+.contMark input:checked~.checkmark {
+    background-color: #fff;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.contMark input:checked~.checkmark:after {
+    display: block;
+}
+
+/* Style the indicator (dot/circle) */
+.contMark .checkmark:after {
+    top: 5.5px;
+    left: 6.3px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: #002147;
+}
+
+/* end of form */
+
+
+/* Animation */
+@keyframes imgAnime {
+    0% {
+        transform: scale(0);
+        opacity: 0;
+    }
+
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+.imgAnime {
+    animation: imgAnime 1s;
+}
+
+/* Right Animation */
+.animationRight {
+    opacity: 0;
+    transform: translateX(-100%);
+    transition: 1s;
+}
+
+.animationRight.show {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+/* Left Animation */
+.animationLeft {
+    opacity: 0;
+    transform: translateX(60px);
+    transition: 1s;
+}
+
+.animationLeft.show {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+/* Up Animation */
+.animationUp {
+    opacity: 0;
+    transform: translateY(100%);
+    transition: 1s;
+}
+
+.animationUp.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Scale Animation */
+.animationScale {
+    opacity: 0;
+    transform: scale(0);
+    transition: 1s;
+}
+
+.animationScale.show {
+    opacity: 1;
+    transform: scale(1);
+}
+
+/* end of Animation */
+
+
+input[type="number"]::-webkit-inner-spin-button {
+    display: none;
+}
+
+input[type="number"] {
+    appearance: textfield;
+    -moz-appearance: textfield;
+}
