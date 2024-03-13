@@ -320,6 +320,11 @@
     opacity: 0.4;
 }
 
+.hov img:not(:hover) {
+    transition: 1s;
+    /* transform: scale(0); */
+}
+
 .hov .but {
     position: absolute;
     top: 50%;
@@ -380,6 +385,10 @@
     box-shadow: 0 1em 1em rgba(180, 180, 180, 0.5);
 }
 
+.miniCard:not(:hover) {
+    transition: 0.5s;
+}
+
 .circle {
     height: 6rem;
     width: 6rem;
@@ -390,124 +399,50 @@
 
 
 /* Education */
-@media only screen and (min-width: 770px) {
-    @keyframes education {
-        0% {
-            transform: translateY(-50%);
-        }
-
-        100% {
-            transform: translateY(0);
-        }
+@keyframes education {
+    0% {
+        transform: translateY(-50%);
     }
 
-    .car {
-        width: 18rem;
-    }
-
-    .show.ed {
-        opacity: 1;
-        transition: 2s;
-        animation: education 2000ms ease-in-out;
-    }
-
-    .vl2 {
-        border-left: 3px solid #0dcaf0;
-        margin-left: 5.5rem;
-    }
-
-    .hl {
-        border: 2px solid #0dcaf0;
-        width: 0;
-        height: 180px;
-        margin-left: 238px;
-        margin-top: 63.5px;
-        transform: rotate(90deg);
+    100% {
+        transform: translateY(0);
     }
 }
 
-@media only screen and (min-width: 460px) and (max-width: 770px) {
-    @keyframes education {
-        0% {
-            transform: translateY(-50%);
-        }
-
-        100% {
-            transform: translateY(0);
-        }
-    }
-
-    .car {
-        width: 15rem;
-    }
-
-    .show.ed {
-        opacity: 1;
-        transition: 2s;
-        animation: education 2000ms ease-in-out;
-    }
-
-    .vl2 {
-        border-left: 3px solid #0dcaf0;
-        margin-left: 35px;
-    }
-
-    .hl {
-        border: 2px solid #0dcaf0;
-        width: 0;
-        height: 80px;
-        margin-left: 120px;
-        margin-top: 112px;
-        transform: rotate(90deg);
-    }
-
-    .circ {
-        position: relative;
-        right: 80px;
-        bottom: 13px;
-    }
+.car {
+    width: 18rem;
 }
 
-@media only screen and (max-width: 460px) {
-    @keyframes education {
-        0% {
-            transform: translateY(-50%);
-        }
+.show.ed {
+    opacity: 1;
+    transition: 2s;
+    animation: education 2000ms ease-in-out;
+}
 
-        100% {
-            transform: translateY(0);
-        }
-    }
+.vl2 {
+    border-left: 3px solid #0dcaf0;
+    margin-left: 5.5rem;
+}
 
-    .car {
-        width: 15rem;
-    }
+.hl {
+    border: 2px solid #0dcaf0;
+    width: 0;
+    height: 180px;
+    margin-top: 3.969rem;
+    transform: rotate(90deg);
+}
 
-    .show.ed {
-        opacity: 1;
-        transition: 2s;
-        animation: education 2000ms ease-in-out;
-    }
+.vl3 {
+    border-left: 3px solid #0dcaf0;
+    margin-right: 5.5rem;
+}
 
-    .vl2 {
-        border-left: 3px solid #0dcaf0;
-        margin-left: 23px;
-    }
-
-    .hl {
-        border: 2px solid #0dcaf0;
-        width: 0;
-        height: 50px;
-        margin-left: 50px;
-        margin-top: 128px;
-        transform: rotate(90deg);
-    }
-
-    .circ {
-        position: relative;
-        right: 135px;
-        bottom: 12px;
-    }
+.hl2 {
+    border: 2px solid #0dcaf0;
+    width: 0;
+    height: 180px;
+    margin-top: 3.969rem;
+    transform: rotate(90deg);
 }
 
 /* Hobby */
