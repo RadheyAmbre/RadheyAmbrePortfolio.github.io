@@ -9,8 +9,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
         integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 </head>
 
 <body>
@@ -136,29 +136,6 @@
     <br><br>
 
     <!-- Project -->
-    <!-- <section class="content" id="project">
-        <div class="container p-1 py-5">
-            <h1 class="cardT">
-                <span class="vl"></span> &nbsp; PROJECT
-            </h1>
-            <a href="./OnlineTest/OnlineTest.html">
-                <div class="hov">
-                    <img class="pro" src="./images/project.png" alt="project">
-                    <button class="but">Live Demo</button>
-                </div>
-            </a>
-        </div>
-
-        <div class="container p-1 py-5">
-            <a href="./Form/index.html">
-                <div class="hov">
-                    <img class="pro" src="./images/form.png" alt="project">
-                    <button class="but">Live Demo</button>
-                </div>
-            </a>
-        </div>
-    </section> -->
-
     <section class="content" id="project">
         <div class="container p-1 py-5">
 
@@ -168,31 +145,34 @@
 
             <div id="carousel" class="carousel my-3 slide" data-bs-ride="carousel">
 
-                <div class="carousel-indicators">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <a href="./OnlineTest/OnlineTest.html" target="_blank">
+                            <img src="./images/project.png" class="w-100" alt="Online Test">
+                        </a>
+                        <div class="carousel-caption text-dark d-none d-md-block">
+                            <h5>Online Test</h5>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <a href="./Form/index.html" target="_blank">
+                            <img src="./images/form.png" class="w-100" alt="SkillUp Form">
+                        </a>
+                    </div>
+                    <div class="carousel-item">
+                        <a href="https://radheyambre.github.io/DinerM4-Sushi-Cafe/" target="_blank">
+                            <img src="./images/DinerM4.png" class="w-100" alt="DinerM4">
+                        </a>
+                    </div>
+                </div>
+
+                <div class="carousel-indicators border border-danger">
                     <button type="button" data-bs-target="#carousel" data-bs-slide-to="0" class="active btn1"
                         aria-current="true" aria-label="Slide 1"></button>
                     <button type="button" data-bs-target="#carousel" data-bs-slide-to="1" class="btn2"
                         aria-label="Slide 2"></button>
                     <button type="button" data-bs-target="#carousel" data-bs-slide-to="2" class="btn3"
                         aria-label="Slide 3"></button>
-                </div>
-
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <a href="./OnlineTest/OnlineTest.html" target="_blank">
-                            <img src="./images/project.png" class=" w-100" alt="Online Test">
-                        </a>
-                    </div>
-                    <div class="carousel-item">
-                        <a href="./Form/index.html" target="_blank">
-                            <img src="./images/form.png" class=" w-100" alt="SkillUp Form">
-                        </a>
-                    </div>
-                    <div class="carousel-item">
-                        <a href="https://radheyambre.github.io/DinerM4-Sushi-Cafe/" target="_blank">
-                            <img src="./images/DinerM4.png" class=" w-100" alt="DinerM4">
-                        </a>
-                    </div>
                 </div>
 
             </div>
@@ -445,9 +425,10 @@
 
     <br><br>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
+
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"
         integrity="sha384-tsQFqpEReu7ZLhBV2VZlAu7zcOV+rXbYlF2cqB8txI/8aZajjp4Bqd+V6D5IgvKT"
         crossorigin="anonymous"></script>

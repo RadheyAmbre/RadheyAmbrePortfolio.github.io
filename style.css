@@ -304,11 +304,20 @@
 }
 
 /* Project */
-.carousel-indicators .btn1,
-.carousel-indicators .btn2,
-.carousel-indicators .btn3 {
-    border: none;
-    color: #0DCAF0;
+.carousel-item a img {
+    background-color: linear-gradient(#000);
+}
+.carousel-indicators {
+    background-color: aquamarine;
+}
+
+.carousel-indicators>.btn1,
+.carousel-indicators>.btn2,
+.carousel-indicators>.btn3 {
+    border: 1px solid red;
+    width: 1rem;
+    height: 1rem;
+    /* border: none; */
     background-color: #0DCAF0;
 }
 
