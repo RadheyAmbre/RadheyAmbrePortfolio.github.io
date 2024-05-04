@@ -307,9 +307,10 @@
 .carousel-item a img {
     background-color: linear-gradient(#000);
 }
-.carousel-indicators {
+
+/* .carousel-indicators {
     background-color: aquamarine;
-}
+} */
 
 .carousel-indicators>.btn1,
 .carousel-indicators>.btn2,
