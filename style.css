@@ -304,44 +304,12 @@
 }
 
 /* Project */
-.hov {
-    position: relative;
-}
-
-.hov img {
-    width: 100%;
-    filter: drop-shadow(10px 10px 10px grey);
-}
-
-.hov img:hover {
-    cursor: pointer;
-    transition: 500ms;
-    transform: scale(0.9);
-    opacity: 0.4;
-}
-
-.hov img:not(:hover) {
-    transition: 1s;
-    /* transform: scale(0); */
-}
-
-.hov .but {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-
-    transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-
-    /* z-index: -1; */
-    background-color: #0DCAF0;
-    color: white;
-    font-size: 16px;
-    padding: 12px 24px;
+.carousel-indicators .btn1,
+.carousel-indicators .btn2,
+.carousel-indicators .btn3 {
     border: none;
-    cursor: pointer;
-    border-radius: 50px;
-    text-align: center;
+    color: #0DCAF0;
+    background-color: #0DCAF0;
 }
 
 /* About Me */
